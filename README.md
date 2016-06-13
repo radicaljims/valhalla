@@ -7,7 +7,7 @@ Some infrastructure for building and running a Postgres container. Might one day
 1. Be on a Docker host
 2. Run ```./rebuild.sh```
 3. Run ```./docker-psql.sh``` (default password is 'valhalla')
-4. Run ```\d``` and you should see something like
+4. Type ```\d``` and you should see something like
     ```
     Password for user valhalla:
     psql (9.5.0, server 9.5.3)

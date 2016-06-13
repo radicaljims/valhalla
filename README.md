@@ -1,0 +1,1 @@
+Be on a Docker host and run ./rebuild.sh, then ./scripts/docker-psql - default password is 'valhalla'. Note that something seems broken with postgres' 9.6 image. Couldn't get POSTGRES_USER and friends to work.

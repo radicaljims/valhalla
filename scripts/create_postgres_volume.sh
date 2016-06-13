@@ -1,1 +1,1 @@
-docker create -v /var/lib/postgresql/data --name postgres9.5-data busybox
+docker create -v /var/lib/postgresql/data --name postgres-9.5-data busybox

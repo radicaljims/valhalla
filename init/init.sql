@@ -1,3 +1,4 @@
-CREATE USER valhalla;
-CREATE DATABASE valhalla;
-GRANT ALL PRIVILEGES ON DATABASE valhalla TO valhalla;
+CREATE TABLE greets (
+       id serial PRIMARY KEY,
+       name varchar (50) NOT NULL
+);

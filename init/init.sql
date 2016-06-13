@@ -1,0 +1,3 @@
+CREATE USER valhalla;
+CREATE DATABASE valhalla;
+GRANT ALL PRIVILEGES ON DATABASE valhalla TO valhalla;

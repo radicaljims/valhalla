@@ -1,1 +1,1 @@
-psql -h localhost -p 5555 -U valhalla --password
+docker exec -it postgres-9.5 bash -c "psql -U valhalla"

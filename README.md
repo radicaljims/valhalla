@@ -34,6 +34,7 @@ If you want you can have ```docker-compose``` take care of building the postgres
 
 1. Run ```./run.sh```
 2. Run ```curl localhost:3000``` and observe
+
     ```
-    [{"schema":"public","name":"greets","insertable":true}]j
+    [{"schema":"public","name":"greets","insertable":true}]
     ```

@@ -12,7 +12,7 @@ Some infrastructure for building and running a Postgres container. ~~Might one d
 4. Type ```\d``` and you should see something like
     ```
     Password for user valhalla:
-    psql (9.5.0, server 9.5.3)
+    psql (9.5.3)
     Type "help" for help.
 
     valhalla=# \d

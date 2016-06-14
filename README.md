@@ -24,7 +24,7 @@ Some infrastructure for building and running a Postgres container. ~~Might one d
     (2 rows)
     ```
 
-5. (Ctrl-D will exit you)
+5. (Ctrl-d will exit you)
 
 By default the container will be running on port 5555 (peek at ```./scripts/docker-psql.sh```).
 

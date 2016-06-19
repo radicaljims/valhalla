@@ -34,7 +34,7 @@ Note that something seems broken with Postgres' 9.6 image. Couldn't get POSTGRES
 
 ### PostgREST
 
-```docker-compose``` will also start-up a *PostgREST* container you can use to interact with Postgres.
+```docker-compose``` will also start-up a *PostgREST* container you can use to interact with Postgres:
 
 1. Run ```curl localhost:3000``` and observe
 

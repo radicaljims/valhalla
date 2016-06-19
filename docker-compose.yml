@@ -19,7 +19,7 @@ services:
             JWT_SECRET: secret
             POOL_SIZE: 10
         depends_on:
-          - postgres
+            - postgres
         links:
             - postgres:postgres
 

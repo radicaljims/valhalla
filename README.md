@@ -2,13 +2,13 @@
 
 Some infrastructure for building and running a Postgres container. ~~Might one day include postgrest~~.
 
-*Now with 100% more ```postgrest```! See the Docker Compose section!*
+*Now with 100% more ```postgrest```!*
 
 ### Instructions
 
 1. Be on a Docker host
-2. Run ```./scripts/rebuild_postgres_container.sh```
-3. Run ```./docker-psql.sh``` to enter the container
+2. Run ```./run.sh```
+3. Run ```./docker-psql.sh``` to enter the Postgres container
 4. Type ```\d``` and you should see something like
     ```
     Password for user valhalla:
@@ -24,18 +24,19 @@ Some infrastructure for building and running a Postgres container. ~~Might one d
     (2 rows)
     ```
 
-5. (Ctrl-d will exit you)
+5. (Ctrl-d will exit you from psql)
+6. (```./stop.sh``` will stop the containers)
+7. (```docker-compose rm``` will delete the containers)
 
-By default the container will be running on port 5555 (peek at ```./scripts/docker-psql.sh```).
+By default the Postgres container will be running on port 5555 (peek at ```./scripts/docker-psql.sh```).
 
 Note that something seems broken with Postgres' 9.6 image. Couldn't get POSTGRES_USER and friends to work!
 
-### Docker Compose
+### PostgREST
 
-If you want you can have ```docker-compose``` take care of building the postgres container AND, at the same time, pull down ```postgrest``` and start up a local service so you can have an automatic REST API for your data!
+```docker-compose``` will also start-up a *PostgREST* container you can use to interact with Postgres.
 
-1. Run ```./run.sh```
-2. Run ```curl localhost:3000``` and observe
+1. Run ```curl localhost:3000``` and observe
 
     ```
     [{"schema":"public","name":"greets","insertable":true}]

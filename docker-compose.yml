@@ -24,16 +24,16 @@ services:
             - postgres:postgres
 
     postgres:
-        container_name: postgres-9.5
-        image: postgres-9.5
+        container_name: valhalla-running
+        image: valhalla
         build:
             context: .
             dockerfile: ./dockerfiles/Create.dockerfile
         ports:
             - "5555:5432"
         volumes:
-            - postgres-9.5-data:/var/lib/postgresql/data
+            - valhalla-data:/var/lib/postgresql/data
 
 volumes:
-    postgres-9.5-data:
+    valhalla-data:
         driver: local

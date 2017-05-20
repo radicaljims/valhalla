@@ -1,1 +1,1 @@
-docker exec -it postgres-9.5 bash -c "psql -U valhalla"
+docker exec -it valhalla-running bash -c "psql -U valhalla"
